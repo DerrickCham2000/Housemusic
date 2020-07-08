@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>asn2 submit</title>
+  </head>
+  <body>
+  <p1>Adding new People:  </p1>
+  <form action="/adduser", method = "post" >
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+  <label for="size">Size:</label><br>
+  <input type="text" id="size" name="size"><br>
+  <label for="height">Height:</label><br>
+  <input type="text" id="height" name="height"><br>
+  <label for="type">Type:</label><br>
+  <input type="text" id="type" name="type"><br>
+
+  <input type="submit" value="Submit">
+  <br><br>
+</form>
+
+  <form action="/delete", method = "post" >
+  <label for="delete">Input Name for Data Deletion:</label><br>
+  <input type="text" id="delete" name="delete"><br>
+
+  <input type="submit" value="Delete">
+  <br><br>
+</form>
+
+</form>
+
+  <form action="/view", method = "post" >
+  <label for="view">Input Name to View Data:</label><br>
+  <input type="text" id="view" name="view"><br>
+
+  <input type="submit" value="view">
+  <br><br>
+</form>
+
+
+  <form action="/deleteall", method = "post" >
+  <label for="Delete All">Press Here to Delete All Data:</label><br>
+  <input type="submit" value="Delete All">
+</form>
+
+    
+    <script src="index.js"></script>
+  </body>
+</html>
